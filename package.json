@@ -1,0 +1,28 @@
+{
+  "name": "jest-reporter-debug",
+  "version": "1.0.0",
+  "description": "A Jest reporter that logs the arguments passed during the Jest test life cycle",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "docs": "jsdoc -c ./.jsdoc.conf"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gimpneek/jest-custom-reporter-docs.git"
+  },
+  "keywords": [
+    "jest",
+    "custom",
+    "reporter"
+  ],
+  "author": "Colin Wren",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/Gimpneek/jest-custom-reporter-docs/issues"
+  },
+  "homepage": "https://github.com/Gimpneek/jest-custom-reporter-docs#readme",
+  "devDependencies": {
+    "jsdoc": "^3.5.5"
+  }
+}
