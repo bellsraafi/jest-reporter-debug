@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Class: DocumentTestHooksReporter</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Class: DocumentTestHooksReporter</h1>
+
+    
+
+
+
+
+<section>
+
+<header>
+    
+        <h2><span class="attribs"><span class="type-signature"></span></span>DocumentTestHooksReporter<span class="signature">(globalConfig, options)</span><span class="type-signature"></span></h2>
+        
+    
+</header>
+
+<article>
+    <div class="container-overview">
+    
+        
+
+    
+
+    
+    <h4 class="name" id="DocumentTestHooksReporter"><span class="type-signature"></span>new DocumentTestHooksReporter<span class="signature">(globalConfig, options)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>constructor for the reporter</p>
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>globalConfig</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Jest configuration object</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>options</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Options object defined in jest config</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="src_index.js.html">src/index.js</a>, <a href="src_index.js.html#line8">line 8</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <h3 class="subsection-title">Methods</h3>
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="onRunComplete"><span class="type-signature"></span>onRunComplete<span class="signature">(test, runResults)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>Hook to process the test run results after all the test suites have been
+executed</p>
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>test</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The Test last run</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>runResults</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="global.html#JestTestRunResult">JestTestRunResult</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Results from the test run</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="src_index.js.html">src/index.js</a>, <a href="src_index.js.html#line43">line 43</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="onRunStart"><span class="type-signature"></span>onRunStart<span class="signature">(runResults, runConfig)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>Hook to process the test run before running the tests, the only real data
+available at this time is the number of test suites about to be executed</p>
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>runResults</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="global.html#JestTestRunResult">JestTestRunResult</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Results for the test run, but only <code>numTotalTestSuites</code> is of use</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>runConfig</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="global.html#JestRunConfig">JestRunConfig</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Run configuration</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="src_index.js.html">src/index.js</a>, <a href="src_index.js.html#line20">line 20</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="onTestResult"><span class="type-signature"></span>onTestResult<span class="signature">(testRunConfig, testResults, runResults)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>Hook to process the test run results after a test suite has been executed
+This will be called many times during the test run</p>
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>testRunConfig</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="global.html#JestTestSuiteRunConfig">JestTestSuiteRunConfig</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Context information about the test run</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>testResults</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="global.html#JestTestSuiteResult">JestTestSuiteResult</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Results for the test suite just executed</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>runResults</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="global.html#JestTestRunResult">JestTestRunResult</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Results for the test run at the point in time of the test suite being executed</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="src_index.js.html">src/index.js</a>, <a href="src_index.js.html#line32">line 32</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+    
+
+    
+
+    
+</article>
+
+</section>
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="DocumentTestHooksReporter.html">DocumentTestHooksReporter</a></li></ul><h3><a href="global.html">Global</a></h3>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.5.5</a> on Sat Mar 09 2019 21:58:01 GMT+0000 (Coordinated Universal Time)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>
